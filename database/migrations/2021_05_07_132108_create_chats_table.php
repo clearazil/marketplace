@@ -23,7 +23,6 @@ class CreateChatsTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('chat_id');
             $table->text('content');
-            $table->timestamp('sender_read_at')->nullable();
             $table->timestamp('recipient_read_at')->nullable();
             $table->timestamps();
 
